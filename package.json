@@ -1,0 +1,11 @@
+{
+  "name": "vue-preset",
+  "version": "1.0.0",
+  "description": "vue preset for typescript",
+  "author": "stone.grandia <stone.grandia@163.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/stone.grandia/vue-preset"
+  }
+}

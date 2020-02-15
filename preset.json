@@ -1,0 +1,16 @@
+{
+  "useTaobaoRegistry": true,
+  "packageManager": "yarn",
+  "useConfigFiles": true,
+  "router": true,
+  "vuex": false,
+  "cssPreprocessor": "dart-sass",
+  "plugins": {
+    "@vue/cli-plugin-typescript": {
+      "classComponent": true
+    },
+    "@vue/cli-plugin-router": {
+      "historyMode": false
+    }
+  }
+}

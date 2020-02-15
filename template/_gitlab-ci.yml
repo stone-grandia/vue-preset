@@ -1,0 +1,30 @@
+image: node:12.11.0-alpine
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+build:
+  stage: build
+  script:
+    - npm run build
+    - node deploy test
+  only:
+    - master
+  tags:
+    - docker
+
+
+deploy:
+  stage: deploy
+  script:
+    - npm run build
+    - node deploy
+  when: manual
+  only:
+    - master
+  tags:
+    - docker
